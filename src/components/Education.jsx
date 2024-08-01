@@ -2,10 +2,15 @@ import React from 'react';
 import '../styles/Education.css'
 
 const Education = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  
+  }
+
   return (
     <div className='education-wrap'>
       <h2>Education</h2>
-      <form className='education'>
+      <form className='education' onSubmit={handleSubmit}>
         <label>
           School Name:
           <input type="text" name="school" />

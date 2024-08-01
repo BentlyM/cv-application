@@ -3,6 +3,7 @@ import Education from './components/Education';
 import GeneralInfo from './components/GeneralInfo';
 import { useState } from 'react';
 import PracticalExperience from './components/PracticalExperience';
+import Resume from './components/Resume';
 
 function App() {
   const DropDown = ({ children , title }) => {
@@ -33,7 +34,8 @@ function App() {
 
   return (
     <>
-      <DropDown title="General Information">
+    <div className='left'>
+    <DropDown title="General Information">
         <GeneralInfo />
       </DropDown>
       <DropDown title="Education">
@@ -42,6 +44,10 @@ function App() {
       <DropDown title="Practical Experience">
         <PracticalExperience />
       </DropDown>
+    </div>
+    <div className='right'>
+      <Resume />
+    </div>
     </>
   );
 }

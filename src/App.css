@@ -1,3 +1,8 @@
+#root {
+  display: flex;
+  flex-direction: row;
+}
+
 
 body {
   margin: 0px;
@@ -6,4 +11,18 @@ body {
 
 .dropdown {
   width: fit-content;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
 }
