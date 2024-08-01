@@ -1,0 +1,11 @@
+
+
+.general-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.general-info-warp {
+    border: 1px solid black;
+    width: fit-content;
+}
