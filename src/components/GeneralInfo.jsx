@@ -4,11 +4,7 @@ import '../styles/GeneralInfo.css'
 const GeneralInfo = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    for(let item of event.target){
-      if(item.type == 'submit') continue;
-      
-      console.log(item.value);
-    }
+  
   }
 
   return (
@@ -18,20 +14,17 @@ const GeneralInfo = () => {
       <form className='general-info' onSubmit={handleSubmit}>
         <label>
           Name:
-          <input type="text" name="name" required/>
-          <span></span>
+          <input type="text" name="name"/>
         </label>
 
         <label>
           Email:
-          <input type="email" name="email" required/>
-          <span></span>
+          <input type="email" name="email"/>    
         </label>
 
         <label>
           Phone Number:
-          <input type="tel" name="phone" required/>
-          <span></span>
+          <input type="tel" name="phone"/>          
         </label>
         <button type='submit'>Submit</button>
       </form>

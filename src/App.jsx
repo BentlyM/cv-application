@@ -1,6 +1,8 @@
 import './App.css';
+import Education from './components/Education';
 import GeneralInfo from './components/GeneralInfo';
 import { useState } from 'react';
+import PracticalExperience from './components/PracticalExperience';
 
 function App() {
   const DropDown = ({ children , title }) => {
@@ -33,6 +35,12 @@ function App() {
     <>
       <DropDown title="General Information">
         <GeneralInfo />
+      </DropDown>
+      <DropDown title="Education">
+        <Education />
+      </DropDown>
+      <DropDown title="Practical Experience">
+        <PracticalExperience />
       </DropDown>
     </>
   );
